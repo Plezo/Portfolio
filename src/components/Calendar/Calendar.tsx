@@ -1,5 +1,7 @@
 import { useState } from 'react'
 
+import Appointment from '../Appointment/Appointment'
+
 import './Calendar.css'
 
 const getWeeks = (year: number, month: number): Date[][] => {
@@ -81,62 +83,68 @@ export default function Calendar() {
   }
 
   return (
-    <div>
-      <table>
-        <thead>
-          <tr>
-            <th style={{textAlign: 'left', paddingLeft: '0.5rem'}} colSpan={5}>
-              {numberToMonth(monthSelected)} {yearSelected}
-            </th>
-            <th colSpan={1}>
-              <button className='changeMonthButton' onClick={() => handleInput(monthSelected-1)}>
-                &lt;
-              </button>
-            </th>
-            <th colSpan={1}>
-              <button className='changeMonthButton' onClick={() => handleInput(monthSelected+1)}>
-                &gt;
-              </button>
-            </th>
-          </tr>
-          <tr>
-            <th>S</th>
-            <th>M</th>
-            <th>T</th>
-            <th>W</th>
-            <th>T</th>
-            <th>F</th>
-            <th>S</th>
-          </tr>
-        </thead>
-        <tbody>
-          {
-            getWeeks(yearSelected, monthSelected+1)
-            .map((dateRow: Date[], i: number): any => (
-              <tr key={i}>
-                {dateRow.map((day: Date): any => {
-                  return <td key={day.getDate()}>
-                    <button 
-                    className={
-                      `dateButton ${day.getMonth() !== monthSelected ? 'dateButtonNotMonth' : ''} 
-                      ${day.toDateString() === (new Date()).toDateString() ? 'dateButtonToday': ''} 
-                      ${(day.getDate() === daySelected && day.getMonth() === monthSelected) ? 'dateButtonSelected': ''}
-                      `
-                    } 
-                    onClick={() => {
-                      if (day.getMonth() !== monthSelected)
-                        setMonthSelected(day.getMonth());
-                      setDaySelected(day.getDate());
-                      }}>
-                      { day.getDate() }
-                    </button>
-                  </td>
-                })}
-              </tr>
-            ))
-          }
-        </tbody>
-      </table>
-    </div>
+    <>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th style={{textAlign: 'left', paddingLeft: '0.5rem'}} colSpan={5}>
+                {numberToMonth(monthSelected)} {yearSelected}
+              </th>
+              <th colSpan={1}>
+                <button className='changeMonthButton' onClick={() => handleInput(monthSelected-1)}>
+                  &lt;
+                </button>
+              </th>
+              <th colSpan={1}>
+                <button className='changeMonthButton' onClick={() => handleInput(monthSelected+1)}>
+                  &gt;
+                </button>
+              </th>
+            </tr>
+            <tr>
+              <th>S</th>
+              <th>M</th>
+              <th>T</th>
+              <th>W</th>
+              <th>T</th>
+              <th>F</th>
+              <th>S</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              getWeeks(yearSelected, monthSelected+1)
+              .map((dateRow: Date[], i: number): any => (
+                <tr key={i}>
+                  {dateRow.map((day: Date): any => {
+                    return <td key={day.getDate()}>
+                      <button 
+                      className={
+                        `dateButton ${day.getMonth() !== monthSelected ? 'dateButtonNotMonth' : ''} 
+                        ${day.toDateString() === (new Date()).toDateString() ? 'dateButtonToday': ''} 
+                        ${(day.getDate() === daySelected && day.getMonth() === monthSelected) ? 'dateButtonSelected': ''}
+                        `
+                      } 
+                      onClick={() => {
+                        if (day.getMonth() !== monthSelected)
+                          setMonthSelected(day.getMonth());
+                        setDaySelected(day.getDate());
+                        }}>
+                        { day.getDate() }
+                      </button>
+                    </td>
+                  })}
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+      
+      <div className='appointment'>
+        <Appointment />
+      </div>
+    </>
   )
 }

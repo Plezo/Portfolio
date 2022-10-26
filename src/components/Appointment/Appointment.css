@@ -1,0 +1,15 @@
+.availableTimeSection {
+    background-color: blueviolet;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.availableTimeBox {
+    background-color: black;
+    color: white;
+
+    width: 100%;
+    margin-bottom: 5px;
+}
