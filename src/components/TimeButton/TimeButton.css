@@ -1,0 +1,18 @@
+.timeButton {
+    width: 10rem;
+    height: 2.25rem;
+}
+
+.timeButtonHalf {
+    width: 5rem;
+    height: 2.25rem;;
+}
+
+.confirmButton {
+    width: 5rem;
+    height: 2.25rem;
+}
+
+.flexChild {
+    flex: 1;
+}

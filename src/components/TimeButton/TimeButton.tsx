@@ -1,15 +1,20 @@
+import './TimeButton.css'
+
 interface Props {
-    time: number,
+    time: string,
     key: number,
-    selectedTime: number,
+    selectedTime: string,
     setSelectedTime: Function
 }
 
 export default function TimeButton(props: Props) {
     return (
-    <tr>
+    <tr className='flexChild'>
         <td>
-            <button className='timeButton' key={props.key} onClick={() => {props.setSelectedTime(props.time)}}>
+            <button 
+            className={props.selectedTime !== props.time ? 'timeButton' : 'timeButtonHalf'} 
+            key={props.key} 
+            onClick={() => {props.setSelectedTime(props.time)}}>
                 {props.time}
             </button>
             { props.selectedTime === props.time && 

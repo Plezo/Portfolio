@@ -3,11 +3,11 @@ import TimeButton from '../TimeButton/TimeButton'
 
 import './Appointment.css'
 
-let availableTimes = [9, 10, 11]
+let availableTimes = ["9:00am", "10:00am", "11:00am", "12:00pm", "1:00pm", "2:00pm"]
 
 export default function Appointment() {
 
-    const [selectedTime, setSelectedTime] = useState(NaN)
+    const [selectedTime, setSelectedTime] = useState("")
 
     return (
     <table className='availableTimeBox'>
@@ -16,10 +16,10 @@ export default function Appointment() {
                 <th>Times</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody className='availableTimeBody'>
             {
-                availableTimes.map((time: number, i: number): any => {
-                    return <TimeButton time={time} key={i} selectedTime={selectedTime} setSelectedTime={setSelectedTime}/>
+                availableTimes.map((time: string, key: number): any => {
+                    return <TimeButton time={time} key={key} selectedTime={selectedTime} setSelectedTime={setSelectedTime}/>
                 })
             }
         </tbody>

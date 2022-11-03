@@ -83,8 +83,8 @@ export default function Calendar() {
   }
 
   return (
-    <>
-      <div>
+    <div className='appointmentSection'>
+      <div className='appointmentChild'>
         <table>
           <thead>
             <tr>
@@ -142,9 +142,9 @@ export default function Calendar() {
         </table>
       </div>
       
-      <div className='appointment'>
+      <div className='appointmentChild'>
         <Appointment />
       </div>
-    </>
+    </div>
   )
 }
