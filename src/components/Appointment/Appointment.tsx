@@ -1,21 +1,28 @@
-import React from 'react'
+import { useState } from 'react'
+import TimeButton from '../TimeButton/TimeButton'
 
 import './Appointment.css'
 
 let availableTimes = [9, 10, 11]
 
 export default function Appointment() {
-  return (
-    <div className='availableTimeSection'>
-        <div>
+
+    const [selectedTime, setSelectedTime] = useState(NaN)
+
+    return (
+    <table className='availableTimeBox'>
+        <thead>
+            <tr>
+                <th>Times</th>
+            </tr>
+        </thead>
+        <tbody>
             {
                 availableTimes.map((time: number, i: number): any => {
-                    return <button key={i} className='availableTimeBox'>
-                        {time}
-                    </button>
+                    return <TimeButton time={time} key={i} selectedTime={selectedTime} setSelectedTime={setSelectedTime}/>
                 })
             }
-        </div>
-    </div>
-  )
+        </tbody>
+    </table>
+    )
 }

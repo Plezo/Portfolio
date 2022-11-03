@@ -88,7 +88,7 @@ export default function Calendar() {
         <table>
           <thead>
             <tr>
-              <th style={{textAlign: 'left', paddingLeft: '0.5rem'}} colSpan={5}>
+              <th colSpan={5}>
                 {numberToMonth(monthSelected)} {yearSelected}
               </th>
               <th colSpan={1}>
