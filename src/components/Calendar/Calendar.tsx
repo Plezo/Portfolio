@@ -38,30 +38,13 @@ const getWeeks = (year: number, month: number): Date[][] => {
     return result;
 }
 
-const numberToMonth = (month: number): string => {
-  const months: any = {
-    0: 'January',
-    1: 'February',
-    2: 'March',
-    3: 'April',
-    4: 'May',
-    5: 'June',
-    6: 'July',
-    7: 'August',
-    8: 'September',
-    9: 'October',
-    10: 'November',
-    11: 'December'
-  };
-
-  return months[month];
-}
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
 export default function Calendar() {
 
   const defaultDate = new Date();
 
-  const [daySelected, setDaySelected] = useState(NaN);
+  const [daySelected, setDaySelected] = useState(defaultDate.getDate());
   const [monthSelected, setMonthSelected] = useState(defaultDate.getMonth());
   const [yearSelected, setYearSelected] = useState(defaultDate.getFullYear());
 
@@ -79,17 +62,22 @@ export default function Calendar() {
     else {
       setMonthSelected(month);
     }
-    setDaySelected(NaN);
+    setDaySelected(1);
   }
 
   return (
-    <div className='appointmentSection'>
-      <div className='appointmentChild'>
-        <table>
+    <div className='panel'>
+
+      <div className='panelChild description'>
+        <h5 style={{marginTop: "15px", fontSize: "24px"}}>Book a meeting with me</h5>
+      </div>
+
+      <div className='panelChild'>
+        <table className='calendarTable'>
           <thead>
-            <tr>
+            <tr style={{lineHeight: "3rem"}}>
               <th colSpan={5}>
-                {numberToMonth(monthSelected)} {yearSelected}
+                {months[monthSelected]} {yearSelected}
               </th>
               <th colSpan={1}>
                 <button className='changeMonthButton' onClick={() => handleInput(monthSelected-1)}>
@@ -142,8 +130,8 @@ export default function Calendar() {
         </table>
       </div>
       
-      <div className='appointmentChild'>
-        <Appointment />
+      <div className='panelChild'>
+        <Appointment dateSelected={new Date(yearSelected, monthSelected, daySelected)}/>
       </div>
     </div>
   )

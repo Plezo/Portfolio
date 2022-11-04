@@ -3,20 +3,29 @@ import TimeButton from '../TimeButton/TimeButton'
 
 import './Appointment.css'
 
-let availableTimes = ["9:00am", "10:00am", "11:00am", "12:00pm", "1:00pm", "2:00pm"]
+let availableTimes = Array.from(Array(24).keys()).map(num => `${num}:00`)
 
-export default function Appointment() {
+const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+
+interface Props {
+    dateSelected: Date,
+}
+
+export default function Appointment(props: Props) {
 
     const [selectedTime, setSelectedTime] = useState("")
 
     return (
-    <table className='availableTimeBox'>
+    <table className='timesList'>
         <thead>
             <tr>
-                <th>Times</th>
+                <th className='timesListHead'>
+                    {weekday[props.dateSelected.getDay()]}, {months[props.dateSelected.getMonth()]} {props.dateSelected.getDate()}
+                </th>
             </tr>
         </thead>
-        <tbody className='availableTimeBody'>
+        <tbody className='timesListBody'>
             {
                 availableTimes.map((time: string, key: number): any => {
                     return <TimeButton time={time} key={key} selectedTime={selectedTime} setSelectedTime={setSelectedTime}/>
