@@ -1,9 +1,12 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import TimeButton from './TimeButton'
 
 import './Appointment.css'
 
-let availableTimes = Array.from(Array(24).keys()).map(num => `${num}:00`)
+// TODO: This will be an API call
+const getAvailableTimes = (day: Date): string[] => {
+    return Array.from(Array(24).keys()).map(num => `${num}:00`)
+}
 
 const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
@@ -14,7 +17,12 @@ interface Props {
 
 export default function Appointment(props: Props) {
 
+    const [timesForDay, setTimesForDay] = useState([''])
     const [selectedTime, setSelectedTime] = useState("")
+
+    useEffect(() => {
+        setTimesForDay(getAvailableTimes(props.selectedDate))
+      }, [props.selectedDate])
 
     return (
         <table className='timesList'>
@@ -27,7 +35,7 @@ export default function Appointment(props: Props) {
             </thead>
             <tbody className='timesListBody'>
                 {
-                    availableTimes.map((time: string, i: number): any => {
+                    timesForDay.map((time: string, i: number): any => {
                         return <TimeButton time={time} key={i} selectedTime={selectedTime} setSelectedTime={setSelectedTime}/>
                     })
                 }
