@@ -1,26 +1,27 @@
 .project {
     margin: 30px;
-
     height: 330px;
     width: 200px;
 }
 
 .project > img {
-    /* height: 200px; */
-    /* width: 200px; */
     height: 60%;
     width: 100%;
 }
 
 .projectName {
     background-color: black;
-    color: white;
+    color: #CDBADA;
     height: 10%;
+}
+
+.projectNameText {
+    padding-top: 5px;
 }
 
 .projectDesc {
     background-color: black;
-    color: white;
+    color: #CDBADA;
 
     height: 30%;
     width: 100%;

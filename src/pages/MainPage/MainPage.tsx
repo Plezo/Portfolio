@@ -1,5 +1,6 @@
 import Panel from '../../components/Panel/Panel'
 import Project from '../../components/Main/Project'
+import Footer from '../../components/Main/Footer'
 import './MainPage.css'
 
 function MainPage() {
@@ -35,21 +36,9 @@ function MainPage() {
           <Project />
           <Project />
         </div>
-      </div>
 
-      <footer>
-        <div id='mediaLinks'>
-          <button>
-            a
-          </button>
-          <button>
-            a
-          </button>
-        </div>
-        <p>
-          2022 Patryk Lezon. All rights reserved.
-        </p>
-      </footer>
+        <Footer />
+      </div>
 
       {/* <Panel /> */}
     </>

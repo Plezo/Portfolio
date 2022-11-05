@@ -1,0 +1,40 @@
+#footer {
+    display: block;
+    align-items: center;
+    text-align: center;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#footer > p {
+    color: #6C6173;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#mediaLinks {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.iconBg {
+    display: flex;
+    background-color: #6C6173;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+
+    margin: 5px;
+}
+
+.footerIcon {
+    color: #CDBADA;
+    height: 30px;
+    width: 30px;
+}
