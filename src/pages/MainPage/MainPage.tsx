@@ -1,14 +1,10 @@
-import React from 'react';
-
-import Calendar from '../../components/Calendar/Calendar'
-import Appointment from '../../components/Appointment/Appointment'
-
+import Panel from '../../components/Panel/Panel'
 import './MainPage.css'
 
 function MainPage() {
   return (
     <div className='calendar'>
-      <Calendar />
+      <Panel />
     </div>
   );
 }
