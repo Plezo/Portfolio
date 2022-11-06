@@ -1,6 +1,8 @@
-import Panel from '../../components/Panel/Panel'
 import Project from '../../components/Main/Project'
 import Footer from '../../components/Main/Footer'
+
+import { BsMoonFill } from 'react-icons/bs'
+
 import './MainPage.css'
 
 function MainPage() {
@@ -8,7 +10,7 @@ function MainPage() {
     <>
       <header>
         <button id='modeButton'>
-          M
+          <BsMoonFill />
         </button>
         <button id='meetingButton'>
           Book a meeting

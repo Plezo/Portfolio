@@ -18,20 +18,6 @@
     transition: 0.15s;
 }
 
-.dateButtonNotMonth {
-    color: rgb(157, 156, 156);
-}
-
-.dateButtonToday {
-    background-color:rgb(73, 80, 123);
-    color: white;
-}
-
-.dateButtonSelected {
-    background-color: black;
-    color: white;
-}
-
 .dateButton:hover {
     background-color: #000000a5;
     color: white;
@@ -45,6 +31,20 @@
 .dateButton:disabled {
     color: rgb(157, 156, 156);
     background-color: transparent;
+}
+
+.dateButtonNotMonth {
+    color: rgb(157, 156, 156);
+}
+
+.dateButtonToday {
+    background-color:rgb(73, 80, 123);
+    color: white;
+}
+
+.dateButtonSelected {
+    background-color: black;
+    color: white;
 }
 
 .changeMonthButton {

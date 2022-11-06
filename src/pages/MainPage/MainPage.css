@@ -10,15 +10,49 @@ header {
 }
 
 #modeButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     float: left;
     margin-top: 15px;
-    margin-left: 15px;    
+    margin-left: 15px;
+
+    height: 32px;
+    width: 32px;
+
+    border-color: transparent;
+    border-radius: 16px;
+    transition: 0.15s;
+}
+
+#modeButton:hover {
+    background-color: #6C6173;
+}
+
+#modeButton:active {
+    background-color: #39333d;
 }
 
 #meetingButton {
     float: right;
     margin-top: 15px;
     margin-right: 15px;
+
+    height: 32px;
+    width: 128px;
+
+    border-color: transparent;
+    border-radius: 16px;
+    transition: 0.15s;
+}
+
+#meetingButton:hover {
+    background-color: #6C6173;
+}
+
+#meetingButton:active {
+    background-color: #39333d;
 }
 
 #main {
@@ -31,6 +65,7 @@ header {
 #intro h1,
 #intro h2,
 #intro p {
+    user-select: none;
     margin-bottom: 10px;
     margin-top: 0;
 

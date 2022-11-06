@@ -5,11 +5,15 @@
 }
 
 .project > img {
+    user-select: none;
+    pointer-events: none;
+    
     height: 60%;
     width: 100%;
 }
 
 .projectName {
+    user-select: none;
     background-color: black;
     color: #CDBADA;
     height: 10%;
@@ -20,6 +24,7 @@
 }
 
 .projectDesc {
+    user-select: none;
     background-color: black;
     color: #CDBADA;
 
