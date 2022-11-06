@@ -1,19 +1,30 @@
+import { useState } from 'react'
+
 import Project from '../../components/Main/Project'
 import Footer from '../../components/Main/Footer'
+import Panel from '../../components/Panel/Panel'
 
 import { BsMoonFill } from 'react-icons/bs'
 
 import './MainPage.css'
 
 function MainPage() {
+
+  const [darkMode, setDarkMode] = useState(true);
+  const [showContactPanel, setShowContactPanel] = useState(false);
+
   return (
     <>
+      { showContactPanel && 
+        <Panel setShowContactPanel={setShowContactPanel}/>
+      }
+
       <header>
         <button id='modeButton'>
           <BsMoonFill />
         </button>
-        <button id='meetingButton'>
-          Book a meeting
+        <button id='meetingButton' onClick={() => setShowContactPanel(true)}>
+          Contact
         </button>
       </header>
 
@@ -38,11 +49,8 @@ function MainPage() {
           <Project />
           <Project />
         </div>
-
         <Footer />
       </div>
-
-      {/* <Panel /> */}
     </>
   );
 }
