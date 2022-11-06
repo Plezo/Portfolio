@@ -1,5 +1,4 @@
-import { IconContext } from "react-icons";
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import { AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai'
 
 import './Footer.css'
 
@@ -8,13 +7,13 @@ export default function Footer() {
     <div id='footer'>
         <div id='mediaLinks'>
 
-            <div className='iconBg'>
-              <AiFillGithub className='footerIcon'/>
-            </div>
+            <a href='https://github.com/Plezo' className='iconBg'>
+              <AiOutlineGithub className='footerIcon'/>
+            </a>
 
-            <div className='iconBg'>
-              <AiFillLinkedin className='footerIcon' />
-            </div>
+            <a href='https://linkedin.com/in/Plezo' className='iconBg'>
+              <AiOutlineLinkedin className='footerIcon' />
+            </a>
 
         </div>
         <p>

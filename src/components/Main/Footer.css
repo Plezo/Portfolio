@@ -11,7 +11,7 @@
 
 #footer > p {
     user-select: none;
-    color: #6C6173;
+    color: #a8a8a8;
     font-size: 14px;
     margin-top: 5px;
 }
@@ -24,7 +24,7 @@
 
 .iconBg {
     display: flex;
-    background-color: #6C6173;
+    background-color: white;
     border-radius: 20px;
     height: 40px;
     width: 40px;
@@ -32,10 +32,20 @@
     align-items: center;
 
     margin: 5px;
+
+    transition: 0.15s;
+}
+
+.iconBg:hover {
+    background-color: #a8a8a8;
+}
+
+.iconBg:active {
+    background-color: #6f6f6f;
 }
 
 .footerIcon {
-    color: #CDBADA;
+    color: black;
     height: 30px;
     width: 30px;
 }

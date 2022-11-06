@@ -1,7 +1,12 @@
 .project {
     margin: 30px;
     height: 330px;
-    width: 200px;
+    width: 250px;
+
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 6px;
+    border-color: white;
 }
 
 .project > img {
@@ -15,26 +20,39 @@
 .projectName {
     user-select: none;
     background-color: black;
-    color: #CDBADA;
+    color: white;
     height: 10%;
 }
 
 .projectNameText {
+    margin: 0;
     padding-top: 5px;
+    font-size: 20px;
 }
 
 .projectDesc {
     user-select: none;
     background-color: black;
-    color: #CDBADA;
+    color: white;
 
+    margin-top: -1.75%;
     height: 30%;
     width: 100%;
 
-    margin-top: -20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .projectDesc > p {
-    padding: 5px 10px 0px 10px;
-    font-size: 14px;
+
+    border-style: solid;
+    border-radius: 4px;
+
+    margin: 0;
+    padding: 5px;
+    margin: 0 5px 0 5px;
+    font-size: 12px;
 }

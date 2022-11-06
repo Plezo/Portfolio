@@ -27,11 +27,11 @@ header {
 }
 
 #modeButton:hover {
-    background-color: #6C6173;
+    background-color: #a8a8a8;
 }
 
 #modeButton:active {
-    background-color: #39333d;
+    background-color: #6f6f6f;
 }
 
 #meetingButton {
@@ -48,11 +48,11 @@ header {
 }
 
 #meetingButton:hover {
-    background-color: #6C6173;
+    background-color: #a8a8a8;
 }
 
 #meetingButton:active {
-    background-color: #39333d;
+    background-color: #6f6f6f;
 }
 
 #main {
@@ -69,7 +69,7 @@ header {
     margin-bottom: 10px;
     margin-top: 0;
 
-    color: #CDBADA;
+    color: white;
 }
 
 #intro h1 {
