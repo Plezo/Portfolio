@@ -6,6 +6,7 @@ import Panel from '../../components/Panel/Panel'
 
 import { BsMoonFill } from 'react-icons/bs'
 
+import projects from './ProjectData.js'
 import './MainPage.css'
 
 function MainPage() {
@@ -34,20 +35,20 @@ function MainPage() {
             Patryk
           </h1>
           <h2>
-            Software Engineer
+            Software Engineer & Full Stack Developer
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            I'm a software engineer who develops full-stack applications. I'm always working on projects
+            to expand my skillset as well as working with people who help me grow as a software engineer.
+            The entire process fascinates me from the planning stages of a project to laying the finishing touches.
+            And most importantly, I'm addicted to the process of learning new things.
           </p>
         </div>
 
         <div id='projectList'>
-          <Project />
-          <Project />
-          <Project />
+          {projects.map((obj: any): JSX.Element => {
+            return <Project name={obj.projectName} desc={obj.projectDesc} img={obj.projectImg}/>
+          })};
         </div>
         <Footer />
       </div>

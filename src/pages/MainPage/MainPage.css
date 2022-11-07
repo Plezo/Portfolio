@@ -66,22 +66,22 @@ header {
 #intro h2,
 #intro p {
     user-select: none;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 0;
 
     color: white;
 }
 
 #intro h1 {
-    font-size: 48px;
+    font-size: 72px;
 }
 
 #intro h2 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 #intro p {
-    width: 500px;
+    width: 600px;
     font-size: 18px;
 }
 

@@ -1,19 +1,26 @@
 import './Project.css'
 
-export default function Project() {
+interface Props {
+  name: string,
+  desc: string[],
+  img: string
+}
+
+export default function Project(props: Props) {
   return (
     <div className='project'>
-        <img className='image' alt='' src='https://www.rainforest-alliance.org/wp-content/uploads/2021/06/capybara-square-1.jpg.optimal.jpg' />
+        <img className='image' alt='' src={props.img} />
         
         <div className='projectName'>
             <p className='projectNameText'>
-            Project Name
+            {props.name}
             </p>
         </div>
         
         <div className='projectDesc'>
-            <p> React </p>
-            <p> HTML/CSS </p>
+          {props.desc.map((tech) => {
+            return <p>{tech}</p>
+          })}
         </div>
     </div>
   )
