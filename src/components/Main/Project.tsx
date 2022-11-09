@@ -1,27 +1,31 @@
 import './Project.css'
 
 interface Props {
-  name: string,
-  desc: string[],
-  img: string
+  info: {
+    name: string,
+    desc: string[],
+    img: string,
+    githubURL: string
+  }
 }
 
 export default function Project(props: Props) {
+  var img = require(`../../../public/images/${props.info.img}`)
   return (
-    <div className='project'>
-        <img className='image' alt='' src={props.img} />
+    <a href={props.info.githubURL} className='project'>
+        <img className='image' alt='' src={img} />
         
         <div className='projectName'>
             <p className='projectNameText'>
-            {props.name}
+            {props.info.name}
             </p>
         </div>
         
         <div className='projectDesc'>
-          {props.desc.map((tech) => {
+          {props.info.desc.map((tech: string): JSX.Element => {
             return <p>{tech}</p>
           })}
         </div>
-    </div>
+    </a>
   )
 }

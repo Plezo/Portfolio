@@ -1,18 +1,21 @@
 const projects = [
     {
-        projectName: 'MNTR',
-        projectDesc: ['React', 'ElectronJS', 'web3'],
-        projectImg: 'https://cdn.discordapp.com/attachments/1009952425131647009/1039712280910241792/unknown.png'
+        name: 'MNTR',
+        desc: ['React', 'ElectronJS', 'web3'],
+        img: 'mntr.png',
+        githubURL: 'https://github.com/Plezo/MNTR'
     },
     {
-        projectName: 'Portfolio Website',
-        projectDesc: ['React', 'HTML/JS'],
-        projectImg: 'https://cdn.discordapp.com/attachments/1009952425131647009/1039712280910241792/unknown.png'
+        name: 'Portfolio Website',
+        desc: ['React', 'HTML/JS'],
+        img: 'github.png',
+        githubURL: 'https://github.com/Plezo/typescript-website'
     },
     {
-        projectName: 'Ctris',
-        projectDesc: ['C++', 'SFML'],
-        projectImg: 'https://cdn.discordapp.com/attachments/1009952425131647009/1039712280910241792/unknown.png'
+        name: 'Ctris',
+        desc: ['C++', 'SFML'],
+        img: 'ctris.png',
+        githubURL: 'https://github.com/Plezo/Ctris'
     }
 ]
 
