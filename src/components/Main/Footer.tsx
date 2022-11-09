@@ -4,17 +4,17 @@ import './Footer.css'
 
 export default function Footer() {
   return (
-    <div id='footer'>
+    <div>
         <div id='mediaLinks'>
-            <a href='https://github.com/Plezo' className='iconBg'>
-              <AiOutlineGithub className='footerIcon'/>
+            <a href='https://github.com/Plezo'>
+              <AiOutlineGithub />
             </a>
 
-            <a href='https://linkedin.com/in/Plezo' className='iconBg'>
-              <AiOutlineLinkedin className='footerIcon' />
+            <a href='https://linkedin.com/in/Plezo'>
+              <AiOutlineLinkedin />
             </a>
         </div>
-        <p>
+        <p id='footerMsg'>
           2022 Patryk Lezon. All rights reserved.
         </p>
       </div>

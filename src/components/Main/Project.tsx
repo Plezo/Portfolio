@@ -13,12 +13,12 @@ export default function Project(props: Props) {
   var img = require(`../../../public/images/${props.info.img}`)
   return (
     <a href={props.info.githubURL} className='project'>
-        <img className='image' alt='' src={img} />
+        <div className='image'>
+          <img src={img} alt=''/>
+        </div>
         
         <div className='projectName'>
-            <p className='projectNameText'>
-            {props.info.name}
-            </p>
+            <p>{props.info.name}</p>
         </div>
         
         <div className='projectDesc'>
