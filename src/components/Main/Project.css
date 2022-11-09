@@ -6,7 +6,7 @@
     border-style: solid;
     border-width: 3px;
     border-radius: 6px;
-    border-color: white;
+    border-color: var(--color5);
 }
 
 .project > img {
@@ -19,9 +19,11 @@
 
 .projectName {
     user-select: none;
-    background-color: 1B1B1B;
-    color: white;
+    background-color: var(--color1);
     height: 10%;
+
+    color: var(--color3);
+    font-weight: bold;
 }
 
 .projectNameText {
@@ -32,7 +34,7 @@
 
 .projectDesc {
     user-select: none;
-    background-color: 1B1B1B;
+    background-color: var(--color1);
     color: white;
 
     margin-top: -1.75%;

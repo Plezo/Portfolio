@@ -11,7 +11,7 @@
 
 #footer > p {
     user-select: none;
-    color: #a8a8a8;
+    color: var(--color2);
     font-size: 14px;
     margin-top: 5px;
 }
@@ -24,7 +24,7 @@
 
 .iconBg {
     display: flex;
-    background-color: white;
+    background-color: var(--color4);
     border-radius: 20px;
     height: 40px;
     width: 40px;
@@ -37,15 +37,15 @@
 }
 
 .iconBg:hover {
-    background-color: #a8a8a8;
+    background-color: var(--color3);
 }
 
 .iconBg:active {
-    background-color: #6f6f6f;
+    background-color: var(--color2);
 }
 
 .footerIcon {
-    color: black;
+    color: var(--color1);
     height: 30px;
     width: 30px;
 }

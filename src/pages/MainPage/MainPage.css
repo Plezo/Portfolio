@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Rose');
+
+:root {
+    --color1: #252323;
+    --color2: #A99985;
+    --color3: #DAD2BC;
+    --color4: #F5F1ED;
+    --color5: #70798C;
+}
+/* Kanit, Delius Swash Caps, Red Rose */
+
 html, body {
     height: 100%;
-    background-color: #1B1B1B;
+    background-color: var(--color1);
+    font-family: 'Red Rose';
 }
 
 header {
@@ -24,14 +36,16 @@ header {
     border-color: transparent;
     border-radius: 16px;
     transition: 0.15s;
+
+    background-color: var(--color4);
 }
 
 #modeButton:hover {
-    background-color: #a8a8a8;
+    background-color: var(--color3);
 }
 
 #modeButton:active {
-    background-color: #6f6f6f;
+    background-color: var(--color2);
 }
 
 #meetingButton {
@@ -45,14 +59,16 @@ header {
     border-color: transparent;
     border-radius: 16px;
     transition: 0.15s;
+
+    background-color: var(--color4);
 }
 
 #meetingButton:hover {
-    background-color: #a8a8a8;
+    background-color: var(--color3);
 }
 
 #meetingButton:active {
-    background-color: #6f6f6f;
+    background-color: var(--color2);
 }
 
 #main {
@@ -68,21 +84,22 @@ header {
     user-select: none;
     margin-bottom: 20px;
     margin-top: 0;
-
-    color: white;
 }
 
 #intro h1 {
     font-size: 72px;
+    color: var(--color2)
 }
 
 #intro h2 {
     font-size: 20px;
+    color: var(--color4);
 }
 
 #intro p {
     width: 600px;
     font-size: 18px;
+    color: var(--color4);
 }
 
 #projectList {
@@ -90,11 +107,4 @@ header {
     flex-direction: row;
     align-items: center;
     text-align: center;
-}
-
-#mediaLinks button {
-    background-color: #CDBADA;
-    border-color: transparent;
-    border-radius: 5px;
-    margin: 5px;
 }
