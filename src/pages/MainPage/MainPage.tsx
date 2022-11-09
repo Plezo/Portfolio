@@ -48,7 +48,7 @@ function MainPage() {
         <div id='projectList'>
           {projects.map((obj: any): JSX.Element => {
             return <Project name={obj.projectName} desc={obj.projectDesc} img={obj.projectImg}/>
-          })};
+          })}
         </div>
         <Footer />
       </div>
