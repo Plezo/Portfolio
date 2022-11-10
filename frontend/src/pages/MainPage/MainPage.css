@@ -49,11 +49,9 @@ header > button:active { background-color: var(--color2); }
 
 #main {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Get rid of this for cool effect */
     align-items: center;
     /* text-align: center; */
-
-    margin-top: 2rem;
 }
 
 #intro h1 {
@@ -86,7 +84,9 @@ header > button:active { background-color: var(--color2); }
     margin-bottom: 2.5rem
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
+
+    #html { font-size: 14px; }
 
     #intro {
         margin-top: 5rem;
@@ -106,20 +106,6 @@ header > button:active { background-color: var(--color2); }
 @media only screen and (max-width: 600px) {
     html {font-size: 12px; }
     header { display: none; }
-
-    #intro {
-        margin-top: 5rem;
-        width: 20rem;
-    }
-
-    #projectList {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    #intro p {
-        width: 100%;
-    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -139,4 +125,8 @@ header > button:active { background-color: var(--color2); }
     #intro p {
         width: 100%;
     }
+}
+
+@media only screen and (min-height: 800px) {
+    html { font-size: 18px; }
 }
