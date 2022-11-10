@@ -16,8 +16,8 @@ function MainPage() {
 
   return (
     <>
-      { showContactPanel && 
-        <Panel setShowContactPanel={setShowContactPanel}/>
+      { 
+        showContactPanel ? <Panel setShowContactPanel={setShowContactPanel}/> : null
       }
 
       <header>
