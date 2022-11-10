@@ -1,4 +1,4 @@
-#footerMsg {
+#footer > p {
     color: var(--color2);
     font-size: 0.75rem;
 }

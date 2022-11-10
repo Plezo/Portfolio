@@ -4,7 +4,7 @@ import './Footer.css'
 
 export default function Footer() {
   return (
-    <div>
+    <div id='footer'>
         <div id='mediaLinks'>
             <a href='https://github.com/Plezo'>
               <AiOutlineGithub />
@@ -14,8 +14,8 @@ export default function Footer() {
               <AiOutlineLinkedin />
             </a>
         </div>
-        <p id='footerMsg'>
-          2022 Patryk Lezon. All rights reserved.
+        <p>
+          © 2022 Patryk Lezon. All rights reserved.
         </p>
       </div>
   )
