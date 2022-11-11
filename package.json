@@ -17,5 +17,6 @@
   "bugs": {
     "url": "https://github.com/Plezo/typescript-website/issues"
   },
-  "homepage": "https://github.com/Plezo/typescript-website#readme"
+  "homepage": "https://github.com/Plezo/typescript-website#readme",
+  "devDependencies": {}
 }

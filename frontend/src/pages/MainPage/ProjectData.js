@@ -7,7 +7,7 @@ const projects = [
     },
     {
         name: 'Portfolio Website',
-        desc: ['React', 'HTML/JS'],
+        desc: ['React', 'TailwindCSS'],
         img: 'github.png',
         githubURL: 'https://github.com/Plezo/typescript-website'
     },
