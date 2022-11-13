@@ -18,6 +18,10 @@ module.exports = {
         'royal-purple': '#663399',
         'lavender': '#BB91E5',
       },
+      borderRadius: {
+        '4xl': '3rem',
+        '5xl': '5rem'
+      }
     },
   },
   plugins: [],

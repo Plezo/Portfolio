@@ -27,15 +27,16 @@ function MainPage() {
   }, [mode])
 
   return (
-    <div className={`h-[100vh] w-[101vw] bg-ivory dark:bg-dark-purple overflow-hidden`}>
+    <div 
+    className={`
+    xl:h-screen w-[101vw] bg-ivory dark:bg-dark-purple overflow-hidden
+    `}>
       <Header mode={mode} setMode={setMode} />
-      <div className='flex flex-col'>
+      <div className='flex flex-col xl:flex-row'>
         <Intro mode={mode} />
-        <div className='bg-dark-purple dark:bg-ivory'>
-          <Skills mode={mode} />
-          <Footer mode={mode} />
-        </div>
+        <Skills mode={mode} />
       </div>
+      <Footer mode={mode} />
     </div>
   );
 }

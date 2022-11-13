@@ -2,7 +2,7 @@ import { BsMoonFill } from 'react-icons/bs'
 
 export default function Header(props: {mode: string, setMode: Function}) {
   return (
-    <header className='flex pt-6 px-20 mb-28'>
+    <header className='flex pt-6 px-20'>
         <button 
         className={`${props.mode} 
         bg-royal-purple w-10 h-10 rounded-2xl text-ivory text-xl
@@ -20,6 +20,7 @@ export default function Header(props: {mode: string, setMode: Function}) {
         hover:text-opacity-80 focus:text-dark-purple
         dark:text-lavender dark:focus:text-royal-purple
         `}
+        onClick={() => window.location.href = 'mailto:plezo@protonmail.com'}
         // onClick={() => setShowContactPanel(true)}
         >
           Contact
