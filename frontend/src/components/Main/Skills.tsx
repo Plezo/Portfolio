@@ -2,11 +2,11 @@
 export default function Skills(props: {mode: string}) {
   return (
     <div
-    className={`
+    className='
     flex align-middle justify-center items-center
     xl:w-5/12 xl:h-3/4 xl:mt-72
     2xl:mt-80
-    `}>
+    '>
         <div 
         className='
         flex flex-col gap-8

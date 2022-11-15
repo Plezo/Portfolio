@@ -3,14 +3,14 @@ import { AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai'
 export default function Footer(props: {mode: string}) {
   return (
     <div 
-    className={` ${props.mode}
-    flex flex-col align-middle justify-center items-center
+    className='
+    flex flex-col align-top justify-start items-center
     py-4 
     bg-ivory text-dark-purple
     dark:bg-dark-purple dark:text-ivory
-    lg:mt-8
-    xl:m-0 xl:min-h-screen
-    `}>
+    lg:pt-8
+    xl:pt-12
+    '>
         <div 
         className='
         flex flex-row py-2 gap-4 

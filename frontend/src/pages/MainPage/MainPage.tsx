@@ -29,7 +29,7 @@ function MainPage() {
   return (
     <div 
     className={`
-    xl:h-screen w-[101vw] bg-ivory dark:bg-dark-purple overflow-hidden
+    xl:h-screen bg-ivory dark:bg-dark-purple
     `}>
       <Header mode={mode} setMode={setMode} />
       <div className='flex flex-col xl:flex-row'>
