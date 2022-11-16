@@ -11,12 +11,19 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
+    fontFamily: {
+      'welcome': ['Inter']
+    },
     extend: {
+      fontSize: {
+        '10xl': '16rem',
+      },
       colors: {
         'ivory': '#FFFEF2',
         'dark-purple': '#2E1A47',
         'royal-purple': '#663399',
         'lavender': '#BB91E5',
+        'black': '#1E1E1E'
       },
       borderRadius: {
         '4xl': '3rem',
