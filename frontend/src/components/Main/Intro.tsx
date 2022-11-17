@@ -2,7 +2,7 @@ import Welcome from './Welcome'
 
 export default function Intro() {
   return (
-    <div className='h-screen'>
+    <div id='intro' className='h-screen'>
       <div className='absolute h-full w-full flex flex-col justify-between items-center text-10xl font-welcome overflow-hidden'>
         <div className='absolute top-0 -right-96 pt-12 animate-pulse'>
           <Welcome />

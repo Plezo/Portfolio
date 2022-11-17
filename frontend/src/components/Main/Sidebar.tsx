@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <div className='
     flex flex-col justify-between
-    fixed px-8 z-10
+    fixed px-12 z-10
     text-ivory h-full
     '>
       <div className='
