@@ -5,12 +5,16 @@ export default function Projects() {
     <div id='projects'
     className='
     h-screen flex flex-col items-center
-    
     '>
       <h1 className='text-ivory text-9xl font-bold pt-32'>/PROJECTS</h1>
-      <div className='flex flex-row pt-20 w-1/2'>
-        <Project />
-      </div>
+      <div className='relative flex flex-row overflow-scroll w-screen h-2/5'>
+        <div className='relative flex flex-row pt-20 justify-center'>
+          <Project />
+        </div>
+        <div className='relative flex flex-row pt-20 justify-center'>
+          <Project />
+        </div>
+      </div>      
     </div>
   )
 }

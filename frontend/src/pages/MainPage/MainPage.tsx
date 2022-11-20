@@ -3,7 +3,8 @@
 import Sidebar from '../../components/Main/Sidebar'
 import Intro from '../../components/Main/Intro'
 import Projects from '../../components/Main/Projects'
-import Footer from '../../components/Main/Footer'
+import About from '../../components/Main/About'
+import Contact from '../../components/Main/Contact'
 
 function MainPage() {
 
@@ -15,6 +16,8 @@ function MainPage() {
       <Sidebar />
       <Intro />
       <Projects/>
+      <About />
+      <Contact />
 
       {/* <div className='flex flex-col xl:flex-row'> */}
         {/* <Intro mode={mode} /> */}
