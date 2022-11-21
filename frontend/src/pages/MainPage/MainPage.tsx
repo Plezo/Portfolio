@@ -1,5 +1,3 @@
-// import { useEffect, useState } from 'react'
-
 import Sidebar from '../../components/Main/Sidebar'
 import Intro from '../../components/Main/Intro'
 import Projects from '../../components/Main/Projects'
@@ -11,19 +9,13 @@ function MainPage() {
   return (
     <div 
     className={`
-    bg-black
+    bg-black w-screen
     `}>
       <Sidebar />
       <Intro />
       <Projects/>
       <About />
       <Contact />
-
-      {/* <div className='flex flex-col xl:flex-row'> */}
-        {/* <Intro mode={mode} /> */}
-        {/* <Skills mode={mode} /> */}
-      {/* </div> */}
-      {/* <Footer mode={mode} /> */}
     </div>
   );
 }

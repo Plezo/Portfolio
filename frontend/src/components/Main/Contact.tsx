@@ -1,35 +1,34 @@
 export default function Contact() {
   return (
     <div id='contact'
-    className='
-    h-screen flex flex-col items-center
-    '>
-        <h1 className='text-ivory text-9xl font-bold pt-24'>/CONTACT</h1>
-        <div className='flex flex-col items-start justify-start gap-4 pt-12'>
-            <h2 className='text-lavender text-6xl font-extrabold tracking-wide'> Say hello! </h2>
-            <div className='flex flex-row gap-8'>
-                <div className='w-1/2'>
-                    <h1 className='text-ivory'>Name:</h1>
-                    <textarea className='resize-none p-2 h-1/3'></textarea>
+    className='flex flex-col items-center h-screen w-screen'>
+        <h1 className='pt-24 font-bold text-ivory text-9xl'>/CONTACT</h1>
+        <h2 className='pt-32 text-6xl font-extrabold tracking-wide text-lavender'> Say hello! </h2>
+        <div className='flex flex-row justify-center w-full gap-12 pt-12 h-1/4'>
+            <div className='flex flex-col items-center justify-center align-middle w-2/12'>
+                <div className='w-52'>
+                    <div className='text-xl font-medium text-ivory'>Name:</div>
+                    <textarea className='w-full h-2/5 p-2 mt-2 overflow-hidden font-bold tracking-wide resize-none'></textarea>
                 </div>
-                <div className='w-1/2'>
-                    <h1 className='text-ivory'>Email:</h1>
-                    <textarea className='resize-none p-2 h-2/3'></textarea>
+                <div className='w-52'>
+                    <h1 className='text-xl font-medium text-ivory'>Email:</h1>
+                    <textarea className='w-full h-2/5 p-2 mt-2 overflow-hidden font-bold tracking-wide resize-none'></textarea>
                 </div>
             </div>
-            <div className='w-full'>
-                <h1 className='text-ivory'>Message:</h1>
-                <textarea className='resize-none w-full h-28 p-2'></textarea>
-            </div>
-            <div className='w-full'>
-                <button 
-                className='
-                float-right text-lavender border-lavender px-10 py-1 border-solid border-2
-                transition-all hover:border-ivory hover:text-ivory hover:duration-500
-                active:border-lavender active:text-lavender
-                '>SEND</button>
+            <div className='w-52'>
+                <h1 className='text-xl font-medium text-ivory'>Message:</h1>
+                <textarea className='w-full mt-2 p-2 resize-none h-3/4'></textarea>
             </div>
         </div>
+        <button 
+        className='
+        px-10 py-1 mt-12 transition-all
+        border-2 border-solid text-lavender border-lavender 
+        hover:border-ivory hover:text-ivory hover:duration-500 
+        active:border-lavender active:text-lavender
+        '>
+            SEND
+        </button>
     </div>
   )
 }

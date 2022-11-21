@@ -2,11 +2,9 @@
 export default function About() {
   return (
     <div id='about'
-    className='
-    h-screen flex flex-col items-center
-    '>
-        <h1 className='text-lavender text-9xl font-bold pt-24'>/ABOUT</h1>
-        <div className='flex pt-16 justify-center w-1/4 text-ivory text-lg'>
+    className='flex flex-col items-center h-screen'>
+        <h1 className='pt-24 font-bold text-lavender text-9xl'>/ABOUT</h1>
+        <div className='flex justify-center w-1/4 pt-16 2xl:text-2xl text-ivory'>
             <p>
                 /*<br></br>
                 I started my programming journey at the age of 12 with C++,

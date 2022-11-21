@@ -3,15 +3,13 @@ import Project from './Project'
 export default function Projects() {
   return (
     <div id='projects'
-    className='
-    h-screen flex flex-col items-center
-    '>
-      <h1 className='text-ivory text-9xl font-bold pt-32'>/PROJECTS</h1>
-      <div className='relative flex flex-row overflow-scroll w-screen h-2/5'>
-        <div className='relative flex flex-row pt-20 justify-center'>
+    className='flex flex-col items-center h-screen'>
+      <h1 className='pt-32 font-bold text-ivory text-9xl'>/PROJECTS</h1>
+      <div className='relative flex flex-row w-screen overflow-hidden h-2/5'>
+        <div className='relative flex flex-row justify-center pt-20'>
           <Project />
         </div>
-        <div className='relative flex flex-row pt-20 justify-center'>
+        <div className='relative flex flex-row justify-center pt-20'>
           <Project />
         </div>
       </div>      
