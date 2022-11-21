@@ -22,9 +22,9 @@ export default function Contact() {
         </div>
         <button 
         className='
-        px-10 py-1 mt-12 transition-all
+        px-10 py-1 mt-12 transition-all text-xl
         border-2 border-solid text-lavender border-lavender 
-        hover:border-ivory hover:text-ivory hover:duration-500 
+        hover:border-ivory hover:text-ivory
         active:border-lavender active:text-lavender
         '>
             SEND
