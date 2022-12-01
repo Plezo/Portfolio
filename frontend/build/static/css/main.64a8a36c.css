@@ -1,0 +1,2 @@
+@tailwind base;@tailwind components;@tailwind utilities;@layer components{.sidebarBtn{@apply transform transition duration-500 hover:scale-150 hover:text-lavender}}
+/*# sourceMappingURL=main.64a8a36c.css.map*/
