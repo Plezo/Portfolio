@@ -28,7 +28,11 @@ module.exports = {
       borderRadius: {
         '4xl': '3rem',
         '5xl': '5rem'
-      }
+      },
+      saturate: {
+        25: '.25',
+        75: '.75',
+      },
     },
   },
   plugins: [],
@@ -36,7 +40,8 @@ module.exports = {
     extend: {
         backgroundColor: ['active'],
         borderColor: ['active'],
-        textColor: ['active']
+        textColor: ['active'],
+        saturate: ['hover'],
     },
 },
 }

@@ -9,6 +9,7 @@ export default function Header() {
     flex flex-col justify-between
     fixed px-12 z-10
     text-ivory h-full
+    invisible md:visible
     '>
       <div className='
       flex flex-col gap-4 text-xl items-center

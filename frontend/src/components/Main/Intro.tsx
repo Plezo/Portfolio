@@ -3,11 +3,17 @@ import Welcome from './Welcome'
 export default function Intro() {
   return (
     <div id='intro' className='h-screen'>
-      <div className='absolute flex flex-col items-center justify-between w-full h-full overflow-hidden text-10xl font-welcome'>
-        <div className='absolute top-0 pt-12 -right-96 animate-pulse'>
+      <div className='
+      absolute flex flex-col items-center justify-between w-full h-full overflow-hidden text-2xl md:text-10xl font-welcome
+      '>
+        <div className='
+        absolute top-0 pt-12 -left-52 md:-right-96 animate-pulse
+        '>
           <Welcome />
         </div>
-        <div className='absolute bottom-0 pb-12 -left-96 animate-pulse'>
+        <div className='
+        absolute bottom-0 pb-12 -right-52 md:-left-96 animate-pulse
+        '>
           <Welcome />
         </div>
       </div>

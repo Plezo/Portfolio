@@ -1,16 +1,16 @@
 const ProjectInfos = [
     {
-        'img': '/images/Portfolio.png',
-        'name': 'PORTFOLIO',
-        'desc': 'The website you are currently viewing!',
-        'stack': 'React, Nodejs, TailwindCSS'
+        'img': '/images/mynt.png',
+        'name': 'MYNT',
+        'desc': 'Landing page design for a financial services company that specializes in tracking investments. (24 Hour Hackathon Winner)',
+        'stack': 'React, Nodejs, HTML/CSS'
     },
-    {
-        'img': '/images/Portfolio.png',
-        'name': 'Ctris',
-        'desc': 'A version of tetris created in C++',
-        'stack': 'C++, SFML'
-    }
+    // {
+    //     'img': '/images/Portfolio.png',
+    //     'name': 'HERMES',
+    //     'desc': 'Frontend design for a recipe/food delivery service.',
+    //     'stack': 'Nodejs, Express, HTML/CSS'
+    // }
 ]
 
 export default ProjectInfos;

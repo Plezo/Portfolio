@@ -4,7 +4,7 @@ export default function About() {
     <div id='about'
     className='flex flex-col items-center h-screen'>
         <h1 className='pt-24 font-bold text-lavender text-9xl'>/ABOUT</h1>
-        <div className='flex justify-center w-1/4 pt-16 2xl:text-2xl text-ivory'>
+        <div className='flex justify-center w-2/3 md:w-1/4 pt-24 md:pt-16 2xl:text-2xl text-ivory'>
             <p>
                 /*<br></br>
                 I started my programming journey at the age of 12 with C++,
