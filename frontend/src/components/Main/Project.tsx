@@ -3,7 +3,7 @@ interface Info {
     name: string;
     desc: string;
     stack: string;
-} 
+}
 
 export default function Project(info: Info) {
   return (
