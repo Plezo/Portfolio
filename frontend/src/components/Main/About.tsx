@@ -3,8 +3,23 @@ export default function About() {
   return (
     <div id='about'
     className='flex flex-col items-center h-screen'>
-        <h1 className='pt-24 font-bold text-lavender text-9xl'>/ABOUT</h1>
-        <div className='flex justify-center w-2/3 md:w-1/4 pt-24 md:pt-16 2xl:text-2xl text-ivory'>
+        <h1 className='
+        pt-24 font-bold text-lavender text-9xl 
+        lg:pt-52
+        xl:pt-24
+        '>
+          /ABOUT
+        </h1>
+
+        <div className='
+        flex justify-center w-2/3 pt-24 
+        font-light tracking-wide text-ivory text-xl
+        sm:pt-36 sm:text-3xl
+        md:w-3/5 md:pt-16
+        lg:pt-36
+        xl:pt-16
+        2xl:w-1/5 2xl:text-2xl 2xl:leading-9 2xl:pt-32
+        '>
             <p>
                 /*<br></br>
                 I started my programming journey at the age of 12 with C++,

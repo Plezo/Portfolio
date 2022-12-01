@@ -7,40 +7,48 @@ interface Info {
 
 export default function Project(info: Info) {
   return (
-    <div className='flex flex-col md:flex-row border-ivory border-solid border-2'>
+    <div className='
+    flex flex-col border-ivory border-solid border-2
+    xl:flex-row
+    '>
         <div className='
-        border-ivory border-solid border-2 md:h-7/12 md:w-7/12
+        border-ivory border-solid border-2
         filter saturate-25 hover:saturate-100
         h-52
+        sm:h-full
+        xl:h-7/12 xl:w-7/12
         '>
             <img src={info.img} alt='' className='h-full w-full'/>
         </div>
-        <div className='h-5/12 md:w-5/12'>
+        <div className='h-5/12 xl:w-5/12'>
             <div 
             className='
-            md:h-1/4 w-full
+            w-full
             text-lavender items-center
             border-ivory border-solid border-2
             flex align-center justify-center
             text-3xl tracking-wider
             py-4
+            sm:text-5xl
+            xl:h-1/4
             '>
                 {info.name}
             </div>
             <div 
             className='
-            md:h-2/4 w-full p-6 
+            w-full p-6 
             text-ivory border-ivory border-solid border-2
-            2xl:text-lg 2xl:font-light 2xl:tracking-wide
+            sm:text-2xl sm:font-light sm:tracking-wide sm:py-12
+            xl:h-2/4
             '>
                 {info.desc}
             </div>
             <div 
             className='
-            md:h-1/4 w-full flex justify-center items-center
+            w-full flex justify-center items-center py-4
             text-ivory border-ivory border-solid border-2 
-            2xl:text-lg 2xl:font-light 2xl:tracking-wide
-            py-4
+            sm:text-2xl sm:font-light sm:tracking-wide sm:py-8
+            xl:h-1/4
             '>
                 {info.stack}
             </div>
