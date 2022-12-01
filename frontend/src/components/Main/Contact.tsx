@@ -7,24 +7,27 @@ export default function Contact() {
         flex flex-col items-center h-screen
         '>
             <h1 className='
-            pt-20 font-bold text-ivory text-8xl
+            pt-10 font-bold text-ivory text-8xl
+            2xl:pt-24
             '>/CONTACT</h1>
+
             <h2 className='
             pt-16 text-6xl font-extrabold text-lavender
             sm:pt-32 
             xl:pt-16
             '> Say hello! </h2>
+            
             <div className='
             flex justify-center 
             w-full pt-16 
             sm:pt-20 
             lg:pt-16
+            xl:pt-8
+            2xl:pt-14
             '>
                 <div className='
                 flex flex-col items-center w-3/6
-                sm:gap-8
                 md:w-2/6
-                xl:gap-2
                 '>
                     <div className='w-full'>
                         <div className='text-2xl text-ivory'>Name:</div>
