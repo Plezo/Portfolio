@@ -20,7 +20,7 @@ module.exports = {
         'dark-purple': '#2E1A47',
         'royal-purple': '#663399',
         'lavender': '#BB91E5',
-        'blackbg': '#1E1E1E'
+        'black': '#1E1E1E'
       },
       borderRadius: {
         '4xl': '3rem',
