@@ -2,35 +2,46 @@ import {
   AiOutlineHome, AiOutlineApartment, AiOutlineSmile, AiOutlinePhone, 
   AiOutlineSolution, AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 
+import { scroller } from 'react-scroll'
+
 export default function Header() {
   const Resume = require('../../assets/Resume.pdf')
+
+  const scrollToSection = (section: string) => {
+    scroller.scrollTo(section, { smooth: true, duration:0 })
+  }
+
   return (
     <div className='
     flex flex-col justify-between
     fixed px-12 z-10
-    text-ivory h-full
+    text-ivory h-screen
     invisible md:visible
     '>
       <div className='
       flex flex-col gap-4 text-xl items-center
       '>
         <div className='h-24 border-solid border-l border-ivory'></div>
-        <a href='#intro' 
-        className='sidebarBtn'>
+        <div
+        className='sidebarBtn'
+        onClick={() => scrollToSection('intro')}>
           <AiOutlineHome />
-        </a>
-        <a href="#projects" 
-        className='sidebarBtn'>
+        </div>
+        <div 
+        className='sidebarBtn'
+        onClick={() => scrollToSection('projects')}>
           <AiOutlineApartment />
-        </a>
-        <a href="#about" 
-        className='sidebarBtn'>
+        </div>
+        <div
+        className='sidebarBtn'
+        onClick={() => scrollToSection('about')}>
           <AiOutlineSmile />
-        </a>
-        <a href="#contact" 
-        className='sidebarBtn'>
+        </div>
+        <div
+        className='sidebarBtn'
+        onClick={() => scrollToSection('contact')}>
           <AiOutlinePhone />
-        </a>
+        </div>
       </div>
 
       <div className='

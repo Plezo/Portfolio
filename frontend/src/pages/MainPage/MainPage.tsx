@@ -9,7 +9,7 @@ function MainPage() {
   return (
     <div 
     className={`
-    bg-black w-screen
+    bg-black w-full h-full
     `}>
       <Sidebar />
       <Intro />
