@@ -7,11 +7,11 @@ export default function Projects() {
     h-screen flex flex-col items-center
     '>
       <h1 className='text-ivory text-9xl font-bold pt-32'>/PROJECTS</h1>
-      <div className='relative flex flex-row overflow-scroll w-screen h-2/5'>
-        <div className='relative flex flex-row pt-20 justify-center'>
+      <div className='flex flex-row pt-20'>
+        <div className='flex flex-row justify-center'>
           <Project />
         </div>
-        <div className='relative flex flex-row pt-20 justify-center'>
+        <div className='flex flex-row justify-center'>
           <Project />
         </div>
       </div>      

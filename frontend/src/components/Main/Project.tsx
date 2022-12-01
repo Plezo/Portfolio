@@ -2,7 +2,7 @@
 
 export default function Project() {
   return (
-    <div className='flex flex-row border-ivory border-solid border-2 w-2/5'>
+    <div className='flex flex-row border-ivory border-solid border-2 w-3/5 justify-center'>
         <div className='border-ivory border-solid border-2 w-2/5'>
             <img src='/images/Portfolio.png' alt='' className='h-full w-full'/>
         </div>
