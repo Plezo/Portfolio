@@ -8,7 +8,7 @@ export default function Projects() {
     <Element name='projects'>
       <div className='flex flex-col items-center h-screen w-full'>
         <h1 className='
-        pt-24 font-bold text-ivory text-7xl
+        pt-12 font-bold text-ivory text-7xl
         sm:text-8xl
         md:text-9xl
         '>/PROJECTS</h1>
