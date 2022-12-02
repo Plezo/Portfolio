@@ -7,7 +7,7 @@ export default function Intro() {
     <Element name='intro'>
       <div className='h-screen'>
         <div className='
-        absolute w-full h-full
+        absolute w-full h-full overflow-hidden
         '>
           <div className='
           absolute pt-12 -left-52 sm:left-0 lg:-right-96 animate-pulse
