@@ -7,7 +7,8 @@ export default function Contact() {
         flex flex-col items-center h-screen
         '>
             <h1 className='
-            pt-10 font-bold text-ivory text-8xl
+            pt-10 font-bold text-ivory text-7xl
+            sm:text-8xl
             2xl:pt-24
             '>/CONTACT</h1>
 

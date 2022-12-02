@@ -5,7 +5,9 @@ export default function About() {
     <Element name='about'>
       <div className='flex flex-col items-center h-screen'>
           <h1 className='
-          pt-12 font-bold text-lavender text-9xl 
+          pt-12 font-bold text-lavender
+          text-7xl 
+          sm:text-9xl
           lg:pt-52
           xl:pt-24
           '>
