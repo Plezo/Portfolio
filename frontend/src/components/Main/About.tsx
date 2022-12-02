@@ -5,7 +5,7 @@ export default function About() {
     <Element name='about'>
       <div className='flex flex-col items-center h-screen'>
           <h1 className='
-          pt-24 font-bold text-lavender text-9xl 
+          pt-12 font-bold text-lavender text-9xl 
           lg:pt-52
           xl:pt-24
           '>
@@ -13,7 +13,7 @@ export default function About() {
           </h1>
 
           <div className='
-          w-2/3 pt-24 
+          w-2/3 pt-16
           text-ivory text-xl
           sm:pt-36 sm:text-3xl
           md:w-3/5 md:pt-16
