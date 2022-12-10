@@ -26,21 +26,24 @@ export default function Contact() {
             xl:pt-8
             2xl:pt-14
             '>
-                <div className='
-                flex flex-col items-center w-3/6
+                <form className='
+                flex flex-col items-center w-3/6 gap-8
                 md:w-2/6
-                '>
+                '
+                action="https://formsubmit.co/Plezo@protonmail.com" target="_blank" method="POST">
+                    <input type="hidden" name="_captcha" value="false"></input>
+                    <input type="hidden" name="_subject" value="Message from Portfolio"></input>
                     <div className='w-full'>
                         <div className='text-2xl text-ivory'>Name:</div>
-                        <textarea className='w-full h-2/5 p-2 overflow-hidden font-bold resize-none'></textarea>
+                        <input type="text" name="Name" className='w-full p-2 overflow-hidden font-bold resize-none' required></input>
                     </div>
                     <div className='w-full'>
                         <h1 className='text-2xl text-ivory'>Email:</h1>
-                        <textarea className='w-full h-2/5 p-2 overflow-hidden font-bold resize-none'></textarea>
+                        <input type="email" name="Email" className='w-full p-2 overflow-hidden font-bold resize-none' required></input>
                     </div>
                     <div className='w-full'>
                         <h1 className='text-2xl text-ivory'>Message:</h1>
-                        <textarea className='w-full font-bold p-2 resize-none h-3/4'></textarea>
+                        <textarea name="Message" className='w-full h-full font-bold p-2 resize-none' required></textarea>
                     </div>
                     <button 
                     className='
@@ -48,10 +51,11 @@ export default function Contact() {
                     border-2 border-solid text-lavender border-lavender 
                     hover:border-ivory hover:text-ivory transition-all
                     active:border-lavender active:text-lavender
-                    '>
+                    '
+                    type="submit">
                     SEND
                     </button>
-                </div>
+                </form>
             </div>
         </div>
     </Element>
