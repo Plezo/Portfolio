@@ -30,7 +30,7 @@ export default function Contact() {
                 flex flex-col items-center w-3/6 gap-8
                 md:w-2/6
                 '
-                action="https://formsubmit.co/Plezo@protonmail.com" target="_blank" method="POST">
+                action="https://formsubmit.co/2cd16560e0c654d7344acbb2e189b4b5" target="_blank" method="POST">
                     <input type="hidden" name="_captcha" value="false"></input>
                     <input type="hidden" name="_subject" value="Message from Portfolio"></input>
                     <div className='w-full'>
