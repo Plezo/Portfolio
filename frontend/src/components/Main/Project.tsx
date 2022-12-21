@@ -18,7 +18,7 @@ export default function Project(info: Info) {
         sm:h-full
         xl:w-6/12
         '>
-            <img src={info.img} alt='' className='h-full'/>
+            <img src={info.img} alt='' className='h-full width-full'/>
         </div>
         <div className=''>
             <div 

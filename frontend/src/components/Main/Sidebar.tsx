@@ -22,26 +22,26 @@ export default function Header() {
       flex flex-col gap-4 text-xl items-center
       '>
         <div className='h-24 border-solid border-l border-ivory'></div>
-        <div
+        <button
         className='sidebarBtn'
         onClick={() => scrollToSection('intro')}>
           <AiOutlineHome />
-        </div>
-        <div 
+        </button>
+        <button 
         className='sidebarBtn'
         onClick={() => scrollToSection('projects')}>
           <AiOutlineApartment />
-        </div>
-        <div
+        </button>
+        <button
         className='sidebarBtn'
         onClick={() => scrollToSection('about')}>
           <AiOutlineSmile />
-        </div>
-        <div
+        </button>
+        <button
         className='sidebarBtn'
         onClick={() => scrollToSection('contact')}>
           <AiOutlinePhone />
-        </div>
+        </button>
       </div>
 
       <div className='
